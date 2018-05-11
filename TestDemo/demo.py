@@ -1,7 +1,6 @@
 # coding=utf-8
-
+from time import sleep
 from selenium import webdriver
-
 browser = webdriver.Firefox()
 browser.get("http://10.6.2.80:5002")
 loginusername = browser.find_element_by_xpath("//input[@type='text']")
@@ -10,3 +9,5 @@ loginsubmit = browser.find_element_by_id("btn")
 loginusername.send_keys("root")
 loginuserpasswd.send_keys("scutech")
 loginsubmit.click()
+sleep(5)
+browser.close()
