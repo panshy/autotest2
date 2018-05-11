@@ -2,7 +2,7 @@
 
 from selenium import webdriver
 
-browser = webdriver.Chrome()
+browser = webdriver.Firefox()
 browser.get("http://10.6.2.80:5002")
 loginusername = browser.find_element_by_xpath("//input[@type='text']")
 loginuserpasswd = browser.find_element_by_xpath("//input[@type='password']")
